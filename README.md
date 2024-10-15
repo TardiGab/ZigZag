@@ -13,6 +13,6 @@ ZigZag est une expérience ludique créée dans RPG Maker qui simule la journée
 - Manciu Gabriel
 
 ## Crédits
-- sprites
-  - personnage (base) :
-  - meubles :
+- sprites (base, modifiées pour notre utilisation)
+  - personnage : [Penzilla](https://penzilla.itch.io/protagonist-character)
+  - meubles : [Penzilla](https://penzilla.itch.io/top-down-retro-interior)
