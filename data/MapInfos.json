@@ -2,5 +2,5 @@
 null,
 {"id":1,"expanded":false,"name":"Chambre lit rangé","order":2,"parentId":2,"scrollX":0,"scrollY":0,"quick":false},
 {"id":2,"expanded":true,"name":"Chambre désordonnée","order":1,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
-{"id":3,"expanded":false,"name":"MAP003","order":3,"parentId":2,"scrollX":0,"scrollY":0,"quick":false}
+{"id":3,"expanded":false,"name":"MAP003","order":3,"parentId":0,"scrollX":0,"scrollY":0,"quick":false}
 ]
