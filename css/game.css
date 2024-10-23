@@ -1,154 +1,219 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?oruhku');
-    src:  url('fonts/icomoon.eot?oruhku#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?oruhku') format('truetype'),
-      url('fonts/icomoon.woff?oruhku') format('woff'),
-      url('fonts/icomoon.svg?oruhku#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?oruhku");
+  src: url("fonts/icomoon.eot?oruhku#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?oruhku") format("truetype"), url("fonts/icomoon.woff?oruhku") format("woff"), url("fonts/icomoon.svg?oruhku#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
-  
-[class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "INVASION2000";
+  src: url("fonts/INVASION2000.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
+
 #fullSize {
-    content: "\e98b";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    width: 100px;
-    height: 50px;
-    z-index: 9999;
-    touch-action: auto;
+  background: #92CD41;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: "INVASION2000", sans-serif;
+  text-decoration: none;
+  color: white;
+  box-shadow: inset -4px -4px 0px 0px #4AA52E;
 }
+#fullSize:hover, #fullSize:focus {
+  background: #76c442;
+  box-shadow: inset -6px -6px 0px 0px #4AA52E;
+}
+#fullSize:active {
+  box-shadow: inset 4px 4px 0px 0px #4AA52E;
+}
+#fullSize:before, #fullSize:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+#fullSize:before {
+  top: -6px;
+  left: 0;
+  border-top: 6px black solid;
+  border-bottom: 6px black solid;
+}
+#fullSize:after {
+  left: -6px;
+  top: 0;
+  border-left: 6px black solid;
+  border-right: 6px black solid;
+}
+#fullSize--reset {
+  background: #E76E55;
+  box-shadow: inset -4px -4px 0px 0px #8C2022;
+}
+#fullSize--reset:hover, #fullSize--reset:focus {
+  background: #CE372B;
+  box-shadow: inset -6px -6px 0px 0px #8C2022;
+}
+#fullSize--reset:active {
+  box-shadow: inset 4px 4px 0px 0px #8C2022;
+}
+#fullSize--proceed {
+  background: #F7D51D;
+  box-shadow: inset -4px -4px 0px 0px #E59400;
+}
+#fullSize--proceed:hover, #fullSize--proceed:focus {
+  background: #F2C409;
+  box-shadow: inset -6px -6px 0px 0px #E59400;
+}
+#fullSize--proceed:active {
+  box-shadow: inset 4px 4px 0px 0px #E59400;
+}
+
+#fullSize {
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
 #errorPrinter {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 640px;
-    height: 100px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-shadow: 1px 1px 3px #000;
-    font-size: 20px;
-    color: #fff;
-    z-index: 9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 640px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+  font-size: 20px;
+  color: #fff;
+  z-index: 9;
 }
+
 #errorName {
-    color: #ff0;
-    font-weight: bold;
-    -moz-user-select: text;
-    -webkit-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
+  color: #ff0;
+  font-weight: bold;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
 }
+
 #errorMessage {
-    color: #fff;
-    -moz-user-select: text;
-    -webkit-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
+  color: #fff;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
 }
+
 #retryButton {
-    font-size: 20px;
-    color: #fff;
-    background-color: #000;
-    border-radius: 8px;
-    margin: 20px;
-    padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 10px;
 }
+
 #fpsCounterBox {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    width: 90px;
-    height: 40px;
-    background: #222;
-    opacity: 0.8;
-    z-index: 8;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 90px;
+  height: 40px;
+  background: #222;
+  opacity: 0.8;
+  z-index: 8;
 }
+
 #fpsCounterLabel {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 5px 10px;
-    height: 30px;
-    line-height: 32px;
-    font-size: 12px;
-    font-family: rmmz-numberfont, sans-serif;
-    color: #fff;
-    text-align: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 10px;
+  height: 30px;
+  line-height: 32px;
+  font-size: 12px;
+  font-family: rmmz-numberfont, sans-serif;
+  color: #fff;
+  text-align: left;
 }
+
 #fpsCounterNumber {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 5px 10px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 24px;
-    font-family: rmmz-numberfont, monospace;
-    color: #fff;
-    text-align: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  font-family: rmmz-numberfont, monospace;
+  color: #fff;
+  text-align: right;
 }
+
 #loadingSpinner {
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 120px;
-    height: 120px;
-    z-index: 10;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 120px;
+  height: 120px;
+  z-index: 10;
 }
+
 #loadingSpinnerImage {
-    margin: 0px;
-    padding: 0px;
-    border-radius: 50%;
-    width: 96px;
-    height: 96px;
-    border: 12px solid rgba(255, 255, 255, 0.25);
-    border-top: 12px solid rgba(255, 255, 255, 1);
-    animation: fadein 2s ease, spin 1.5s linear infinite;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  border: 12px solid rgba(255, 255, 255, 0.25);
+  border-top: 12px solid rgb(255, 255, 255);
+  animation: fadein 2s ease, spin 1.5s linear infinite;
 }
+
 @keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=game.css.map */
