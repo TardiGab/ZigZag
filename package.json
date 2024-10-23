@@ -5,7 +5,7 @@
     "window": {
         "title": "iLab",
         "width": 1280,
-        "height": 720,
+        "height": 840,
         "position": "center",
         "icon": "icon/icon.png"
     }
