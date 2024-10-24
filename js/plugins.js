@@ -15,5 +15,6 @@ var $plugins =
 {"name":"GALV_MessageStylesMZ","status":true,"description":"(v.2.1) 'Show Text' windows float above characters and change visuals during game.","parameters":{"iIndicator":"2,0,-12","mPadding":"0,0,0,0","invertPos":"true","aGraphic":"WindowArrow","yOffset":"60"}},
 {"name":"AltMenuScreen","status":true,"description":"Alternative menu screen layout.","parameters":{}},
 {"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
-{"name":"StrechMode_ON","status":true,"description":"Force StretchMode","parameters":{}}
+{"name":"StrechMode_ON","status":true,"description":"Force StretchMode","parameters":{}},
+{"name":"NoOptions","status":true,"description":"","parameters":{}}
 ];
