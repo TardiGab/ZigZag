@@ -16,5 +16,5 @@ var $plugins =
 {"name":"AltMenuScreen","status":true,"description":"Alternative menu screen layout.","parameters":{}},
 {"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
 {"name":"StrechMode_ON","status":true,"description":"Force StretchMode","parameters":{}},
-{"name":"NoOptions","status":true,"description":"","parameters":{}}
+{"name":"NoOptions","status":false,"description":"","parameters":{}}
 ];

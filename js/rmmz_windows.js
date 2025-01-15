@@ -1843,7 +1843,7 @@ Window_MenuCommand.prototype.makeCommandList = function() {
     this.addMainCommands();
     this.addFormationCommand();
     this.addOriginalCommands();
-    this.addOptionsCommand();
+    // this.addOptionsCommand();
     this.addSaveCommand();
     this.addGameEndCommand();
 };
@@ -6405,10 +6405,10 @@ Window_TitleCommand.initCommandPosition = function() {
 };
 
 Window_TitleCommand.prototype.makeCommandList = function() {
-    const continueEnabled = this.isContinueEnabled();
+    // const continueEnabled = this.isContinueEnabled();
     this.addCommand(TextManager.newGame, "newGame");
-    this.addCommand(TextManager.continue_, "continue", continueEnabled);
-    this.addCommand(TextManager.options, "options");
+    // this.addCommand(TextManager.continue_, "continue", continueEnabled);
+    // this.addCommand(TextManager.options, "options");
 };
 
 Window_TitleCommand.prototype.isContinueEnabled = function() {
