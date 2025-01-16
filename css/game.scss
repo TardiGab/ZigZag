@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'INVASION2000';
-    src:  url('fonts/INVASION2000.ttf') format('truetype');
+    src:  url('../fonts/INVASION2000.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -58,8 +58,8 @@ $reset-shadow-color:  #8C2022;
     display: inline-block;
     position: relative;
     text-align: center;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 5px;
     font-family: 'INVASION2000', sans-serif;
     text-decoration: none; 
     color: white;
