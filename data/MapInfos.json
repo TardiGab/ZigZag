@@ -6,5 +6,6 @@ null,
 {"id":4,"expanded":true,"name":"Couloir d'entrée","order":2,"parentId":0,"scrollX":485.6666666666667,"scrollY":310,"quick":false},
 {"id":5,"expanded":false,"name":"Eatingroom","order":4,"parentId":0,"scrollX":485.6666666666667,"scrollY":310,"quick":false},
 {"id":6,"expanded":false,"name":"Rue","order":7,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
-{"id":7,"expanded":true,"name":"Intro","order":1,"parentId":0,"scrollX":0,"scrollY":0,"quick":false}
+{"id":7,"expanded":true,"name":"Intro","order":1,"parentId":0,"scrollX":485.6666666666667,"scrollY":310,"quick":false},
+{"id":8,"expanded":false,"name":"Fin","order":8,"parentId":0,"scrollX":0,"scrollY":0,"quick":false}
 ]
