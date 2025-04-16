@@ -6001,19 +6001,19 @@ Window_ActorCommand.prototype.addAttackCommand = function() {
 };
 
 Window_ActorCommand.prototype.addSkillCommands = function() {
-    const skillTypes = this._actor.skillTypes();
-    for (const stypeId of skillTypes) {
-        const name = $dataSystem.skillTypes[stypeId];
-        this.addCommand(name, "skill", true, stypeId);
-    }
+    // const skillTypes = this._actor.skillTypes();
+    // for (const stypeId of skillTypes) {
+    //     const name = $dataSystem.skillTypes[stypeId];
+    //     this.addCommand(name, "skill", true, stypeId);
+    // }
 };
 
 Window_ActorCommand.prototype.addGuardCommand = function() {
-    this.addCommand(TextManager.guard, "guard", this._actor.canGuard());
+    // this.addCommand(TextManager.guard, "guard", this._actor.canGuard());
 };
 
 Window_ActorCommand.prototype.addItemCommand = function() {
-    this.addCommand(TextManager.item, "item");
+    // this.addCommand(TextManager.item, "item");
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {
