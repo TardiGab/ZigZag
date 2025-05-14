@@ -215,4 +215,18 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+@media all and (view-mode: fullscreen) {
+  #fullSize {
+    display: none;
+  }
+}
+:-webkit-full-screen #fullSize {
+  display: none;
+}
+:fullscreen #fullSize,
+:-webkit-full-screen #fullSize,
+:-moz-full-screen #fullSize,
+:-ms-fullscreen #fullSize {
+  display: none;
 }/*# sourceMappingURL=game.css.map */

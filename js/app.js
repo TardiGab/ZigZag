@@ -26,3 +26,17 @@ document.getElementById("fullSize").addEventListener("click", function() {
         }
     }
 });
+
+document.addEventListener("fullscreenchange", toggleFullSizeVisibility);
+document.addEventListener("webkitfullscreenchange", toggleFullSizeVisibility);
+document.addEventListener("mozfullscreenchange", toggleFullSizeVisibility);
+document.addEventListener("MSFullscreenChange", toggleFullSizeVisibility);
+
+function toggleFullSizeVisibility() {
+    const fullSizeElement = document.getElementById("fullSize");
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+        fullSizeElement.style.display = "none";
+    } else {
+        fullSizeElement.style.display = "inline-block"; // Remettre l'affichage par défaut
+    }
+}
